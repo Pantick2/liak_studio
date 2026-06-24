@@ -63,6 +63,25 @@ body {
     color: var(--text-main);
 }
 
+/* --- DONATE BUTTON --- */
+.btn-donate {
+    background-color: var(--accent-blue);
+    color: var(--text-main) !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 700 !important;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+    font-size: 0.95rem !important;
+}
+.btn-donate:hover {
+    background-color: transparent;
+    border-color: var(--accent-blue);
+    color: var(--accent-blue) !important;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
 /* --- LANGUAGE SWITCHER DESKTOP --- */
 .lang-switcher {
     display: flex;
@@ -149,7 +168,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 .mobile-links a {
     font-size: 1.8rem;
@@ -166,7 +185,7 @@ body {
 .lang-switcher-mobile {
     display: flex;
     gap: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     border-top: 1px solid var(--border-color);
     padding-top: 1.5rem;
     width: 100%;
@@ -186,6 +205,11 @@ body {
     border-color: var(--accent-blue);
     color: var(--accent-blue);
     background: rgba(59, 130, 246, 0.05);
+}
+.mobile-donate {
+    margin-top: 1rem;
+    font-size: 1.3rem !important;
+    padding: 0.8rem 2.5rem;
 }
 
 /* --- HERO SECTION --- */
@@ -337,8 +361,11 @@ body {
 }
 
 /* --- RESPONSIVENESS --- */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .navbar { padding: 1.5rem 2rem; }
+    .nav-links { gap: 1.5rem; }
+}
+@media (max-width: 768px) {
     .nav-links { display: none; }
     .hamburger-menu { display: flex; }
     .hero { padding: 5rem 1.5rem 3rem 1.5rem; }
