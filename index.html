@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iulian Ichim-Ungureanu | Personal Tech Hub</title>
-    <!-- Font modern premium remediat -->
+    <!-- Font modern premium -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -22,12 +22,19 @@
         
         <!-- Linkuri desktop -->
         <div class="nav-links">
-            <a href="#proiecte">Proiecte</a>
-            <a href="#despre">Despre Mine</a>
+            <a href="#proiecte" data-en="Projects" data-ro="Proiecte">Projects</a>
+            <a href="#despre" data-en="About Me" data-ro="Despre Mine">About Me</a>
+            
+            <!-- Selector de limbă premium -->
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="ro">RO</button>
+            </div>
         </div>
 
         <!-- Butonul Hamburger (vizibil doar pe mobil) -->
-        <button class="hamburger-menu" aria-label="Deschide meniul">
+        <button class="hamburger-menu" aria-label="Menu">
             <span></span>
             <span></span>
             <span></span>
@@ -37,21 +44,27 @@
     <!-- Meniu Mobil Overlay -->
     <div class="mobile-overlay">
         <div class="mobile-links">
-            <a href="#proiecte" class="mobile-link">Proiecte</a>
-            <a href="#despre" class="mobile-link">Despre Mine</a>
+            <a href="#proiecte" class="mobile-link" data-en="Projects" data-ro="Proiecte">Projects</a>
+            <a href="#despre" class="mobile-link" data-en="About Me" data-ro="Despre Mine">About Me</a>
+            
+            <!-- Selector limbă pe mobil -->
+            <div class="lang-switcher-mobile">
+                <button class="lang-btn-mobile active" data-lang="en">EN</button>
+                <button class="lang-btn-mobile" data-lang="ro">RO</button>
+            </div>
         </div>
     </div>
 
     <!-- HERO -->
     <header class="hero">
-        <h1>Next-Generation Digital Projects</h1>
-        <p>Hub-ul meu personal unde dezvolt și listez aplicații web de nișă, automatizări inteligente și interfețe premium optimizate pentru viteză și performanță.</p>
-        <a href="#proiecte" class="btn-nav-contact btn-hero">Explorează Proiectele</a>
+        <h1 data-en="Next-Generation Digital Projects" data-ro="Proiecte Digitale de Nouă Generație">Next-Generation Digital Projects</h1>
+        <p data-en="My personal hub where I build and index niche web applications, intelligent automations, and premium interfaces optimized for speed and performance." data-ro="Hub-ul meu personal unde dezvolt și listez aplicații web de nișă, automatizări inteligente și interfețe premium optimizate pentru viteză și performanță.">My personal hub where I build and index niche web applications, intelligent automations, and premium interfaces optimized for speed and performance.</p>
+        <a href="#proiecte" class="btn-hero-link" data-en="Explore Projects" data-ro="Explorează Proiectele">Explore Projects</a>
     </header>
 
     <!-- PORTOFOLIU -->
     <section class="portfolio-section" id="proiecte">
-        <h2 class="section-title">Aplicații & Proiecte Active</h2>
+        <h2 class="section-title" data-en="Active Applications & Projects" data-ro="Aplicații & Proiecte Active">Active Applications & Projects</h2>
         <div class="projects-grid">
             
             <!-- Proiectul 1 (Activ) -->
@@ -59,35 +72,35 @@
                 <div>
                     <div class="project-tag">AI Contract Auditor</div>
                     <h3>My Personal Analyst</h3>
-                    <p>Platformă SaaS avansată de scanare textuală bazată pe AI. Detectează instantaneu clauzele abuzive, capcanele financiare și generează idei de renegociere bilingve în timp real.</p>
+                    <p data-en="Advanced SaaS platform for textual scanning powered by AI. Instantly detects abusive clauses, financial pitfalls, and generates real-time bilingual renegotiation strategies." data-ro="Platformă SaaS avansată de scanare textuală bazată pe AI. Detectează instantaneu clauzele abuzive, capcanele financiare și generează idei de renegociere bilingve în timp real.">Advanced SaaS platform for textual scanning powered by AI. Instantly detects abusive clauses, financial pitfalls, and generates real-time bilingual renegotiation strategies.</p>
                 </div>
-                <a href="https://mypersonalanalyst.com" target="_blank" rel="noopener" class="btn-project-link">Deschide Aplicația →</a>
+                <a href="https://mypersonalanalyst.com" target="_blank" rel="noopener" class="btn-project-link" data-en="Open Application →" data-ro="Deschide Aplicația →">Open Application →</a>
             </article>
 
-            <!-- Proiectul 2 (Șablon pregătit pentru viitor) -->
+            <!-- Proiectul 2 (Viitor) -->
             <article class="project-card">
                 <div>
-                    <div class="project-tag">SaaS / Web App</div>
-                    <h3>Următorul proiect tech</h3>
-                    <p>O nouă soluție digitală inteligentă aflată în curs de dezvoltare. Această secțiune este pregătită pentru a găzdui următoarea mea lansare software.</p>
+                    <div class="project-tag" data-en="SaaS / Web App" data-ro="SaaS / Web App">SaaS / Web App</div>
+                    <h3 data-en="Next Tech Project" data-ro="Următorul proiect tech">Next Tech Project</h3>
+                    <p data-en="A new intelligent digital solution currently under development. This section is ready to host my next software launch." data-ro="O nouă soluție digitală inteligentă aflată în curs de dezvoltare. Această secțiune este pregătită pentru a găzdui următoarea mea lansare software.">A new intelligent digital solution currently under development. This section is ready to host my next software launch.</p>
                 </div>
-                <a href="#" class="btn-project-link btn-disabled">În curs de dezvoltare</a>
+                <a href="#" class="btn-project-link btn-disabled" data-en="Under Development" data-ro="În curs de dezvoltare">Under Development</a>
             </article>
 
         </div>
     </section>
 
-    <!-- DESPRE MINE (Inlocuieste sectiunea de contact) -->
+    <!-- DESPRE MINE -->
     <section class="about-section" id="despre">
-        <h2 class="section-title">Despre Acest Hub</h2>
+        <h2 class="section-title" data-en="About This Hub" data-ro="Despre Acest Hub">About This Hub</h2>
         <div class="about-content">
-            <p>Sunt pasionat de tehnologie, arhitectură software și soluții bazate pe inteligență artificială. Acest spațiu digital funcționează ca un index public pentru toate paginile, instrumentele și aplicațiile web pe care le proiectez și le lansez pe internet.</p>
+            <p data-en="I am passionate about technology, software architecture, and artificial intelligence solutions. This digital space functions as a public index for all the web pages, tools, and applications that I design and launch on the internet." data-ro="Sunt pasionat de tehnologie, arhitectură software și soluții bazate pe inteligență artificială. Acest spațiu digital funcționează ca un index public pentru toate paginile, instrumentele și aplicațiile web pe care le proiectez și le lansez pe internet.">I am passionate about technology, software architecture, and artificial intelligence solutions. This digital space functions as a public index for all the web pages, tools, and applications that I design and launch on the internet.</p>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        &copy; 2026 Liak Studio. Toate drepturile rezervate. Deținut de IULIAN ICHIM-UNGUREANU.
+        <span data-en="&copy; 2026 Liak Studio. All rights reserved. Owned by IULIAN ICHIM-UNGUREANU." data-ro="&copy; 2026 Liak Studio. Toate drepturile rezervate. Deținut de IULIAN ICHIM-UNGUREANU.">&copy; 2026 Liak Studio. All rights reserved. Owned by IULIAN ICHIM-UNGUREANU.</span>
     </footer>
 
     <!-- Conectare la fișierul JavaScript extern -->
